@@ -1,0 +1,82 @@
+const MaxOptions = 11;
+      MenuWidth  = 20;
+      MaxOpen    = 5;
+
+type MenuString  = string[MenuWidth];
+     MenuType    = array[0..MaxOptions] of MenuString;
+
+var  MenuSP       : integer;
+     MenuStack    : array[0..MaxOpen] of record
+                                               MenuX,
+                                               MenuY        : Integer;
+                                               Ptr          : Pointer;
+                                               MenuImageSize: word;
+                                               end;
+
+const
+   menu0:MenuType=
+          (#10,
+          'Network Menu',
+          'Connections.. ',
+          'Images..      ',
+          'Associations..',
+          'Back-propagate',
+          'Test          ',
+          'K             ',
+          'Normalization ',
+          'noise Level   ',
+          'Quit          ','');
+   menuC:MenuType=
+          (#6,
+          'Connection Menu',
+          'Load         ',
+          'Save         ',
+          'Zero         ',
+          'Randomize    ',
+          'ESCape       ','','','','','');
+   menuI:MenuType=
+          (#5,
+          'Image Menu',
+          'Load         ',
+          'Save         ',
+          'Edit         ',
+          'ESCape       ','','','','','','');
+   menuA:MenuType=
+          (#6,
+          'Association Menu',
+          'Load         ',
+          'Save         ',
+          'Add Pairs    ',
+          'Delete all Pairs',
+          'ESCape','','','','','');
+   menuV:MenuType=
+          (#4,
+          'Set New Value',
+          '^            ',
+          'v            ',
+          'RET: Done    ','','','','','','','');
+   menuE:MenuType=
+          (#9,
+          'Edit Menu',
+          'F1 : Invert     ',
+          'F2 : Clear      ',
+          'F3 : Corrupt 10%',
+          'F4 : Normalize  ',
+          'F5 : Grab Graphics',
+          'INS: Scroll Mode',
+          'RET: Done       ',
+          'ESC: Abort   ','','');
+   menuG:MenuType=
+          (#7,
+          'Grab Menu',
+          'PGUP: ^ grab port ',
+          'PGDN: v grab port ',
+          '^ ->: ^ step size ',
+          '^ <-: v step size ',
+          'SPC : Grab        ',
+          'RET : Done        ','','','','');
+   menuW:MenuType=
+          (#1,
+          'Please Wait ...',
+          '','','','','','','','','','');
+

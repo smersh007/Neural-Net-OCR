@@ -1,0 +1,41 @@
+The source code files are identified as follows:
+
+SWTVVRRI.TTT
+\/|\/\/| \_/
+ ||| | |  |
+ ||| | |  +-File Type
+ ||| | +----Include File Number
+ ||| +------Revision
+ ||+--------Version
+ |+---------Software Type I=Include file
+ +----------Software ID
+
+
+SAVEVV  .ASS  Association save file
+SAVEVV  .IMG  Character Set save file
+SAVEVV  .NET  Connection Matrix save file
+    ^^
+     software Version number
+
+SW001000 PAS
+SW002000 PAS
+SW003000 PAS
+SW003010 PAS
+SW003020 PAS
+SW003030 PAS
+SW004000 PAS
+SW005000 PAS
+SW006000 PAS
+
+  SWI0V000 PAS Menu Definitions
+  SWI0V001 PAS Global Declarations
+  SWI0V002 PAS Cell Drawing procedures
+  SWI0V003 PAS Displays, windows etc.
+  SWI0V004 PAS Menu Procedures
+  SWI0V005 PAS Matrix and Vector Operations
+  SWI0V006 PAS Matrix Display
+  SWI0V007 PAS Cell Editor SWI05008  Learning / Recalling procedures
+  SWI0V009 PAS Screen Display procedures
+    ^ ^
+    |  \ V = 4,5,6  (Software Version numbers)
+     \__ Include files
