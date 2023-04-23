@@ -10,7 +10,7 @@ Thesis was completed in 1989 formy Degree in Electrical Engineering at The Unive
 Software was developed with Turbo Pascal V4.0 running on DOS on 4.77Mhz 8086.
 There is a GUI developed as part of the work.
 
-There is an interesting section in theis thesis
+There is an interesting section in theis thesis Think ChatGPT....
 
 6.3. An Intelligent Conversation Machine.
 
